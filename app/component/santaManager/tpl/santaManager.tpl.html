@@ -1,0 +1,52 @@
+<div layout="column" layout-align="center center" layout-padding ng-if="$ctrl.users.length > 1">
+    <section flex layout="row" layout-xs="column" layout-sm="column" layout-align="end center" layout-wrap layout-fill>
+        <md-button flex class="md-raised md-primary width-100" ng-click="$ctrl.getPairList()" ng-disabled="$ctrl.pairList.length > 0">
+            start pairing
+        </md-button>
+        <md-button flex class="md-raised md-accent width-100" ng-click="$ctrl.getPairList()" ng-disabled="$ctrl.pairList.length === 0 || $ctrl.users.length === $ctrl.pairList.length">
+            finsh pairing
+        </md-button>
+        <md-button flex class="md-raised md-warn width-100" ng-click="$ctrl.resetPairList()" ng-disabled="$ctrl.pairList.length === 0">
+            reset pair
+        </md-button>
+    </section>
+    <section flex layout="row" layout-xs="column" layout-sm="column" layout-align="center start" layout-wrap layout-fill layout-padding>
+
+        <div flex layout="column" layout-align="start center" class="width-100">
+            <md-list layout-fill layout-align="center center" class="user-list">
+                <md-subheader class="md-no-sticky" layout="column" layout-align="center center">Secret santa users</md-subheader>
+                <md-list-item ng-repeat="u in $ctrl.users track by $index" ng-click="$ctrl.getMyPair(u)" class="noright">
+                    <img alt="{{ u.name.first }}" ng-src="https://picsum.photos/100/100?image={{$index*10}}" class="md-avatar" />
+                    <p class="width-100 padding-horizontal" layout="column" layout-align="center start">
+                        <b  class="ellipsis width-100">{{ u.name.first + " " + u.name.last }}</b>
+                        <span class="ellipsis width-100">{{ u.email }}</span>
+                    </p>
+                    <img alt="select your pair" ng-src="/app/img/takeTiket.jpg" class="md-avatar" />
+                </md-list-item>
+            </md-list>
+        </div>
+        <div flex layout="column" layout-align="start center" class="width-100">
+            <md-list layout-fill layout-align="center center" class="pair-list">
+                <md-subheader class="md-no-sticky ellipsis width-100" layout="column" layout-align="center center">Secret santa pairings</md-subheader>
+                <md-list-item ng-repeat="p in $ctrl.pairList " ng-click="$ctrl.openSantaCard(p)" class="noright" layout="row" layout-align="center center">
+                    <img ng-src="/app/img/gift.png" class="md-avatar" />
+                    <p layout="column" layout-align="center start" class="width-100 padding-horizontal">
+                        <b class="ellipsis width-100">{{ p.sender.name.first + " " + p.sender.name.last }}</b>
+                        <span class="ellipsis width-100">{{ p.sender.email }}</span>
+                    </p>
+                    <img ng-src="/app/img/GIFT.png" class="md-avatar" />
+                    <p layout="column" layout-align="center start" class="width-100 padding-horizontal">
+                        <b class="ellipsis width-100">{{ p.recipient.name.first + " " + p.recipient.name.last }}</b>
+                        <span class="ellipsis width-100">{{ p.recipient.email }}</span>
+                    </p>
+                </md-list-item>
+            </md-list>
+        </div>
+
+    </section>
+
+</div>
+
+<div class="width-100" layout="column" layout-align="center center" layout-padding ng-if="$ctrl.users.length < 1">
+    <img class="width-100 add-more" src="/app/img/addMoreUser.png" alt="Santa">
+</div>

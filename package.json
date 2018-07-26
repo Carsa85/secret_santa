@@ -1,0 +1,12 @@
+{
+  "name": "secret_santa",
+  "version": "1.0.0",
+  "description": "secret santa GILT Front End Coding Challenge",
+  "main": "/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Marco Carsana",
+  "license": "ISC"
+}

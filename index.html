@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secret Santa application</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="app/css/santa-style.css">
+
+  <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+  <!--[if IE]><link rel="shortcut icon" href="/app/img/favico32.png"><![endif]-->
+
+  <!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. -->
+  <link rel="apple-touch-icon-precomposed" href="/app/img/favico180.png">
+
+  <!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+  <link rel="icon" href="/app/img/favico196.png">
+
+</head>
+
+<body ng-app="secretSanta">
+
+  <div layout="column" class="santa-content">
+
+    <md-toolbar class="md-warn main-tool" layout-align="center center"></md-toolbar>
+    
+    <md-content flex>
+
+      <div layout="column" layout-align="center center">
+        <h1 align = "center" >Secret Santa application</h1>
+      </div>
+
+      <santa-manager layout="column"></santa-manager>
+
+    </md-content>
+
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-aria.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular-messages.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.10/angular-material.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/component/santaManager/santaManager.module.js"></script>
+  <script src="app/component/santaManager/js/santaManager.component.js"></script>
+
+</body>
+
+</html>

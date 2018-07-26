@@ -1,0 +1,97 @@
+body,
+html {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.santa-content {
+    padding-bottom: 50px;
+}
+
+md-toolbar.main-tool {
+  background: url(/app/img/og.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+}
+
+.alert {
+  min-height: 300px;
+}
+
+.alert .pair {
+  height: 300px;
+  min-width: 280px;
+  background-image: url(/app/img/selectedTiket.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.alert .pair span {
+  margin-bottom: 55px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #555;
+}
+
+.alert .santa-card {
+  height: 520px;
+  width: 350px;
+  min-width: 280px;
+  background-image: url(/app/img/santa-claus-26.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.alert .santa-card p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #419a98;
+  margin-left: 32px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.alert .santa-card p:first-child {
+  margin-top: 158px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.padding-horizontal {
+  padding: 0px 10px;
+}
+
+.pair-list p,
+.user-list p {
+  overflow: hidden;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+img.md-avatar {
+  max-width: 80px !important;
+  max-height: 80px !important;
+  width: 10vw !important;
+  height: 10vw !important;
+}
+
+.md-subheader-content {
+  font-size: 1.6em;
+}
+
+md-list-item {
+    border: 1px solid #eee;
+}
+
+img.add-more {
+    max-width: 800px;
+}
