@@ -1,2 +1,2 @@
-# secret_santa
+# secret santa
 secret santa full responsive application
