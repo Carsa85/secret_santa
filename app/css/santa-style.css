@@ -22,7 +22,7 @@ md-toolbar.main-tool {
 .alert .pair {
   height: 300px;
   min-width: 280px;
-  background-image: url(/app/img/selectedTiket.png);
+  background-image: url(/app/img/selectedTicket.png);
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;

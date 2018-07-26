@@ -21,7 +21,7 @@
                         <b  class="ellipsis width-100">{{ u.name.first + " " + u.name.last }}</b>
                         <span class="ellipsis width-100">{{ u.email }}</span>
                     </p>
-                    <img alt="select your pair" ng-src="/app/img/takeTiket.jpg" class="md-avatar" />
+                    <img alt="select your pair" ng-src="/app/img/takeTicket.jpg" class="md-avatar" />
                 </md-list-item>
             </md-list>
         </div>
@@ -40,6 +40,9 @@
                         <span class="ellipsis width-100">{{ p.recipient.email }}</span>
                     </p>
                 </md-list-item>
+                <p class="width-100" ng-if="$ctrl.pairList.length === 0">
+                    Take a ticket or pres the start pairing botton
+                </p>
             </md-list>
         </div>
 
