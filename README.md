@@ -46,9 +46,9 @@ All of dependencies in this project are from cdnjs [`https://cdnjs.com/`][cdnjs-
 
 Library       | version | Link
 ------------- |---------|-------------
-angular.js | 1.7.2 | ![text alt](https://cdnjs.com/libraries/angular.js)
-angular-material | 1.1.10 | ![text alt](https://cdnjs.com/libraries/angular-material)
-material-design-icons | 3.0.1 | ![text alt](https://cdnjs.com/libraries/material-design-icons)
+angular.js | 1.7.2 | [https://cdnjs.com/libraries/angular.js]
+angular-material | 1.1.10 | [https://cdnjs.com/libraries/angular-material]
+material-design-icons | 3.0.1 | [https://cdnjs.com/libraries/material-design-icons]
 
 ### Run the Application
 
