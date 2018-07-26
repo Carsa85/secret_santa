@@ -5,7 +5,7 @@ Secret santa full responsive application
 
 This application support the browsers in below:
 
-![alt text](https://github.com/Carsa85/secret_santa/app/img/browsers coverage.png)
+![alt text](https://github.com/Carsa85/secret_santa/blob/master/app/img/browsers%20coverage.png)
 
 ## Getting Started
 
